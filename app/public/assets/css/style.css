@@ -1,0 +1,40 @@
+.title{
+  font-family: 'Contrail One', cursive;
+  color: black;
+
+
+}
+
+/*.quiz-start{
+  font-family: 'Contrail One', cursive;
+  color: black;
+}*/
+
+body {
+  background-image: url(../images/pexels-photo-317356.jpeg);
+  background-repeat: no-repeat center center fixed;
+}
+
+.subtitle{
+  margin-top: 25%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  font-family: 'Homemade Apple', cursive;
+  font-weight: bold;
+  font-size: 35px;
+  color: black;
+}
+
+.btn-primary {
+    margin-top: 3%;
+    color: black;
+    background-color: transparent;
+    border-color: black;
+}
+
+
+.bottom-link {
+  margin-top: 18%;
+
+}
