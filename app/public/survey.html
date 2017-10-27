@@ -213,7 +213,7 @@
           </div>
         </div>
           <div class="row">
-          <input type="submit" value="submit">
+          <input class="submit" type="submit" value="submit">
         </div>
       </form>
 
@@ -232,3 +232,42 @@
 
 </body>
 </html>
+
+<script type="text/javascript">
+
+    $(".submit").on("click", function(event) {
+      event.preventDefault();
+
+      var newFriend = {
+        name: $("#requiredName").val().trim(),
+        photo: $("#requiredPhoto").val().trim(),
+        // push value from answers to array 
+       
+      };
+
+      console.log(newFriend);
+
+      
+
+      $.post("/api/friends", newFriend,
+        function(data) {
+
+          // If a table is available... tell user they are booked.
+          if (data) {
+            alert("Yay! You're Officially Added!");
+          }
+
+          // If a table is available... tell user they on the waiting list.
+          else {
+            alert("Double check your application");
+          }
+
+          // Clear the form when submitting
+          $("#requiredName").val("");
+          $("#requiredPhoto").val("");
+
+        });
+
+    });
+
+</script>
