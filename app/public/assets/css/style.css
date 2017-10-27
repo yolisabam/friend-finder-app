@@ -5,14 +5,18 @@
 
 }
 
-/*.quiz-start{
-  font-family: 'Contrail One', cursive;
+hr{
   color: black;
-}*/
+}
 
 body {
   background-image: url(../images/pexels-photo-317356.jpeg);
   background-repeat: no-repeat center center fixed;
+}
+
+.input {
+  background-color: transparent; 
+  border: solid black 2px;
 }
 
 .subtitle{
@@ -28,6 +32,8 @@ body {
 
 .btn-primary {
     margin-top: 3%;
+    margin-left:33%;
+    margin-right:33%;
     color: black;
     background-color: transparent;
     border-color: black;
